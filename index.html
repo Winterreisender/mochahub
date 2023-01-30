@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%- siteInfo.title %></title>
@@ -10,16 +10,16 @@
   <body>
 
     <header>
-      <h1> <%- siteInfo.title %>  </h1>
+      <h1 class="glass-card"> <%- siteInfo.title %>  </h1>
     </header>
 
     <main>
       <% siteInfo.groups.forEach(({groupName, sites}) => { %>
 
-        <h2> <%- groupName %> </h2>
+        <h2 class="glass-card"> <%- groupName %> </h2>
         <div class="site-list">
           <% sites.forEach(({name, url, description}) => { %>
-            <div class="site-card" onclick="window.open('<%= url %>')">
+            <div class="site-card glass-card" onclick="window.open('<%= url %>')">
               <a href="<%= url %>"> <%- name %>  </a>
               <p><%- description %> </p>
             </div>
@@ -29,8 +29,8 @@
       <% }) %>
     </main>
 
-    <footer>
-      
+    <footer class="glass-card">
+      <p>Copyright 2023. All rights reserved.</p>
     </footer>
 
   </body>

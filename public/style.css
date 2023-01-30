@@ -3,14 +3,27 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  
   position: relative;
+  font-family: "Microsoft YaHei UI", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 main {
-  font-family: "Microsoft YaHei UI", sans-serif;;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
 
 .group {
 
@@ -21,16 +34,14 @@ main {
 }
 
 .site-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 23em);
+  justify-items: center;
+  justify-content: center;
 }
 
 .site-card {
-  backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(209, 213, 219, 0.3);
-  border-radius: 12px;
   padding: 1em;
   margin: .5em;
   width: 20em;
@@ -46,4 +57,12 @@ main {
 
 .site-card:hover {
   box-shadow: 5px 5px 5px gray;
+}
+
+.glass-card {
+  border-radius: 16px;
+  padding: .5em;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }

@@ -3,6 +3,9 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import sites from './sites.json'
 
 export default defineConfig({
+  optimizeDeps: {
+    exclude: ['firebase-functions'],
+  },
   plugins: [
     createHtmlPlugin({
       minify: true,
