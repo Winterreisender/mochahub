@@ -1,0 +1,49 @@
+body {
+  background-image: url("./background.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+  position: relative;
+}
+
+main {
+  font-family: "Microsoft YaHei UI", sans-serif;;
+}
+
+
+.group {
+
+}
+
+.group h2 {
+  text-decoration: underline;
+}
+
+.site-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.site-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  border-radius: 12px;
+  padding: 1em;
+  margin: .5em;
+  width: 20em;
+  height: 6em;
+}
+
+.site-card > a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: black;
+}
+
+.site-card:hover {
+  box-shadow: 5px 5px 5px gray;
+}
