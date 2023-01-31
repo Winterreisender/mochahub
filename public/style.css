@@ -13,6 +13,12 @@ header {
   align-items: center;
 }
 
+header > h1 > img {
+  width: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 main {
   display: flex;
   flex-flow: column nowrap;
