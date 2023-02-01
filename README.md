@@ -1,4 +1,7 @@
-# MochaHub
+<h1>
+<img src="public/logo.svg" style="width: 1em; height: 1em" />
+<span>MochaHub</span>
+</h1>
 
 追求简洁、美观和小巧的导航页生成器。
 
@@ -13,7 +16,7 @@
 
 缺点:
 
-- 需要现代浏览器
+- 需要现代浏览器(Chromium 92+, Firefox 105+, Safari 16+)
 
 ## License
 

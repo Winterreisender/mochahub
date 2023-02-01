@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            let schema = [];
+
+            function addToSchema(item) {
+                schema.push(item);
+            }
+
+            function updateSchemaText() {
+                const schemaText = document.querySelector("#schema");
+                schemaText.innerText = JSON.stringify(schema);
+            }
+
+            function onBtnClicked() {
+                const name = document.querySelector("#name").value;
+                const url = document.querySelector("#url").value;
+                const description = document.querySelector("#description").value;
+                const uuid = crypto.randomUUID();
+                addToSchema({uuid, name, url, description});
+                updateSchemaText();
+            }
+        </script>
+        <style>
+            main {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+
+                height: 100vh;
+                width: 100vw;
+            }
+
+            #schema {
+                width: 50vw;
+                height: 20vh;
+                margin: 3vh;
+            }
+
+            #item-form input {
+                width: 28vw;
+                height: 1.5em;
+                margin: 1vh 1vw;
+                
+            }
+
+            button {
+                width: 5em;
+                height: 5vh;
+                margin-left: 40%;
+
+                background-color: rgb(238,72,99);
+                border-radius: 6px;
+                border: none;
+                color: whitesmoke;
+                cursor: pointer;
+            }
+
+            button:hover {
+                box-shadow: 5px 5px whitesmoke;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <textarea id="schema" readonly></textarea>
+            <form id="item-form" action="javascript:onBtnClicked()">
+                <label for="name">名称</label>
+                <input id="name" type="text" name="name" required />
+                <br/>
+
+                <label for="url">网址</label>
+                <input id="url" type="text" name="url" required />
+                <br/>
+
+                <label for="description">描述</label>
+                <input id="description" type="text" name="description" />
+                <br/>
+
+                <button type="submit">添加</button>
+            </form>
+        </main>
+    </body>
+</html>

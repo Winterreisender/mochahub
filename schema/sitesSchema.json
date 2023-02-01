@@ -2,9 +2,11 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "properties": {
         "groups": {
+            "description": "The array contains many `group`s of website",
             "items": {
                 "properties": {
                     "groupName": {
+                        "description": "The name of the group",
                         "type": "string"
                     },
                     "sites": {
@@ -18,6 +20,10 @@
                                 },
                                 "url": {
                                     "type": "string"
+                                },
+                                "uuid": {
+                                    "description": "The UUID of a site, you can generate one in www.uuidgenerator.net online. We recommend UUID version 4",
+                                    "type": "string"
                                 }
                             },
                             "type": "object"
@@ -30,6 +36,7 @@
             "type": "array"
         },
         "title": {
+            "description": "The title of the hub.",
             "type": "string"
         }
     },

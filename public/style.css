@@ -13,11 +13,6 @@ header {
   align-items: center;
 }
 
-header > h1 > img {
-  width: 1em;
-  display: inline-block;
-  vertical-align: middle;
-}
 
 main {
   display: flex;
@@ -69,6 +64,15 @@ footer {
   border-radius: 16px;
   padding: .5em;
   backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+
+.inline-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.1em;
 }

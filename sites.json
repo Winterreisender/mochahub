@@ -5,26 +5,13 @@
             "groupName": "在线动画",
             "sites": [
                 {
+                    "uuid": "f3aadf87-3007-4d90-b9b2-1bf167848c2d",
                     "name": "AEG动漫",
                     "url": "https://www.agemys.net/",
                     "description": "【适合补番】画质算高清，加载速度快，个人也经常使用。"
                 },
                 {
-                    "name": "稀饭动漫",
-                    "url": "https://dick.xfani.com/",
-                    "description": "【适合追番】上传的资源画质高加载快，只不过缺少很多旧番。"
-                },
-                {
-                    "name": "稀饭动漫",
-                    "url": "https://dick.xfani.com/",
-                    "description": "【适合追番】上传的资源画质高加载快，只不过缺少很多旧番。"
-                },
-                {
-                    "name": "稀饭动漫",
-                    "url": "https://dick.xfani.com/",
-                    "description": "【适合追番】上传的资源画质高加载快，只不过缺少很多旧番。"
-                },
-                {
+                    "uuid": "6c9f2956-a356-4598-82e5-25cc350d7468",
                     "name": "稀饭动漫",
                     "url": "https://dick.xfani.com/",
                     "description": "【适合追番】上传的资源画质高加载快，只不过缺少很多旧番。"
@@ -35,46 +22,57 @@
             "groupName": "轻小说/电子书",
             "sites": [
                 {
+                    "uuid": "4d239c6e-a0aa-4391-8bd4-ffd9c087aeba",
                     "name": "哔哩轻小说",
                     "url": "https://www.linovelib.com"
                 },
                 {
+                    "uuid": "8b5723e4-edc6-449a-9d4d-8d6bd6c26a6c",
                     "name": "轻小说文库",
                     "url": "https://www.wenku8.net/index.php"
                 },
                 {
+                    "uuid": "0abaa15f-c5db-4ea6-8ce7-86828535617f",
                     "name": "轻书架",
                     "url": "https://www.lightnovel.app"
                 },
                 {
+                    "uuid": "9acb903e-4942-4841-abc3-c57c3cd65db4",
                     "name": "铅笔小说",
                     "url": "https://www.23qb.net/lightnovel"
                 },
                 {
+                    "uuid": "7d9985da-2c7c-4c20-a9ea-cc643ec2dac7",
                     "name": "魔笔小说",
                     "url": "https://www.mobinovels.com"
                 },
                 {
+                    "uuid": "fa085fb0-ce99-4853-9813-7294316dc815",
                     "name": "真白萌",
                     "url": "https://masiro.me/admin"
                 },
                 {
+                    "uuid": "f45486fd-d1b3-4735-b9c9-52e8671a0c1e",
                     "name": "深夜读书会",
                     "url": "http://ritdon.com"
                 },
                 {
+                    "uuid": "d26d9cde-383c-447f-ace4-6fcf867305f5",
                     "name": "ESJZone",
                     "url": "https://www.esjzone.cc"
                 },
                 {
+                    "uuid": "24f8eba9-b4cc-4ca2-8bf4-3ee7a9a6f3d9",
                     "name": "clibrary图书馆",
                     "url": "https://clibrary.top"
                 },
                 {
+                    "uuid": "045255ad-1362-4865-8903-8145895b2361",
                     "name": "图书馆的无限回廊",
                     "url": "https://epub.love/wp"
                 },
                 {
+                    "uuid": "02c15773-eb03-436e-a9d9-65b2ba061781",
                     "name": "我爱电子书",
                     "url": "https://www.52doc.com"
                 }
