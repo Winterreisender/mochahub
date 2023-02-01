@@ -3,28 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%- siteInfo.title %></title>
   </head>
   <body>
 
-    <header class="glass-card">
-      <h1> <img src="logo.svg" class="inline-icon"/> <%- siteInfo.title %>  </h1>
-      <nav><ol>
-        <li><a href="/schema/itemGenerator.html">添加站点</a></li>
-      </ol></nav>
+    <header>
+        <h1 class="glass-card title"> <img src="logo.svg" class="inline-icon"/> <%- siteInfo.title %>  </h1>
+        <nav class="center-container">
+          <div class="glass-card">
+            <a href="/schema/itemGenerator.html">添加</a>
+            <a href="/schema/itemGenerator.html">关于</a>
+            <a href="/schema/itemGenerator.html">帮助</a>
+          </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="center-container glass-card-large">
       <% siteInfo.groups.forEach(({groupName, sites}) => { %>
 
-        <h2 class="glass-card"> <%- groupName %> </h2>
+        <h2 class="glass-card group-title"> <%- groupName %> </h2>
         <div class="site-list">
           <% sites.forEach(({name, url, description}) => { %>
-            <div class="site-card glass-card" onclick="window.open('<%= url %>')">
-              <a href="<%= url %>"> <%- name %>  </a>
-              <p><%- description %> </p>
+            <div class="site-card" onclick="window.open('<%= url %>')">
+              <h3 class="margin-0"><a href="<%= url %>"> <%- name %>  </a></h3>
+              <p><%- description || "暂时还没有描述哦" %> </p>
             </div>
           <% }) %>
         </div>
@@ -32,8 +36,8 @@
       <% }) %>
     </main>
 
-    <footer class="glass-card">
-      <p>Copyright 2023. All rights reserved.</p>
+    <footer class="center-container">
+      <p class="glass-card">Copyright 2023. All rights reserved.</p>
     </footer>
 
   </body>

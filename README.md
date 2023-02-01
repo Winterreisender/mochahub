@@ -7,7 +7,15 @@
 
 追求简洁、美观和小巧的导航页生成器。该项目还在实验阶段。
 
-## 定位
+## 使用方法
+
+1. 修改 `sites.json`，添加站点
+2. 下载本项目 `git clone https://github.com/Winterreisender/MochaHub`
+3. 安装Node.js, 打开项目文件夹, 运行 `npm install`
+4. 预览页面 `npm run dev`
+5. 构建页面 `npm run build`
+
+## 特点
 
 优点:
 
@@ -28,6 +36,7 @@ MochaHub的诞生离不开开放源代码软件项目。
 | [vite-plugin-html](https://github.com/vbenjs/vite-plugin-html)               | [MIT](https://github.com/vbenjs/vite-plugin-html/blob/main/LICENSE)                  |
 | [ajv](https://github.com/ajv-validator/ajv)                                  | [MIT](https://github.com/ajv-validator/ajv/blob/main/LICENSE)                        |
 | [typescript-json-schema](https://github.com/YousefED/typescript-json-schema) | [BSD-3-Clause](https://github.com/YousefED/typescript-json-schema/blob/main/LICENSE) |
+| [Photo](https://unsplash.com/photos/m-gqDRzbJLQ) by [Content Pixie](https://unsplash.com/@contentpixie) | [Unsplash License](https://unsplash.com/license) |
 
 ## License
 

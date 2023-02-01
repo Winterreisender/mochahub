@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #69b076
+}
+
+/* --------Element CSS--------- */
+
+body {
+  background-color: var(--primary-color);
+  background-image: url("./background.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+header {
+  border-radius: 0 0 9px 9px;
+  font-family: "Microsoft YaHei UI", sans-serif;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1em;
+}
+
+header > * {
+  margin-right: 1vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+main > :nth-child(1) {
+  margin-top: 0;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.site-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 22em);
+  justify-items: center;
+  justify-content: center;
+}
+
+.site-card {
+  padding: 1em;
+  margin: .5em;
+  width: 18em;
+  height: 6em;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.site-card:hover {
+  box-shadow: 5px 5px 5px gray;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),0 4px 6px -2px rgba(0, 0, 0, 0.15);
+}
+
+
+/* --------Atom CSS--------- */
+
+.margin-0 {
+  margin: 0;
+}
+
+.glass-card {
+  border-radius: 16px;
+  padding: .6em;
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.glass-card-large {
+  border-radius: 16px;
+  margin: 1vh 1vw;
+  padding: 1.8em;
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+
+.inline-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.1em;
+}
+
+.center-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
