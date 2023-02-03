@@ -1,6 +1,21 @@
 :root {
-  --primary-color: #69b076
+  --primary-color: #57C3C2;
+  --secondary-color: #99CCCB;
+  --font-color: black;
+  --background-color: white;
+  --glass-card-bg-color: #ffffffbf
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #57C3C2;
+    --secondary-color: #99CCCB;
+    --font-color: white;
+    --background-color: black;
+    --glass-card-bg-color: #0000004f
+  }
+}
+
 
 /* --------Element CSS--------- */
 
@@ -11,10 +26,11 @@ body {
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  color: var(--font-color);
 }
 
 a {
-  color: black;
+  color: var(--font-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -70,7 +86,7 @@ footer {
   width: 18em;
   height: 6em;
   border-radius: 5px;
-  background-color: white;
+  background-color: var(--background-color);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -91,7 +107,7 @@ footer {
   padding: .6em;
   backdrop-filter: blur(10px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--glass-card-bg-color);
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
@@ -101,7 +117,7 @@ footer {
   padding: 1.8em;
   backdrop-filter: blur(10px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--glass-card-bg-color);
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
