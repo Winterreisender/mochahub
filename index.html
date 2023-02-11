@@ -8,24 +8,34 @@
     <title><%- siteInfo.title %></title>
   </head>
   <body>
-
     <header>
         <h1 class="glass-card title"> <img src="logo.svg" class="inline-icon"/> <%- siteInfo.title %>  </h1>
+
+        <% if(siteInfo.nav) { // 导航 %>
         <nav class="center-container">
           <div class="glass-card">
-            <a href="/schema/itemGenerator.html">添加</a>
-            <a href="/schema/itemGenerator.html">关于</a>
-            <a href="/schema/itemGenerator.html">帮助</a>
+            <% for(const [name, url] of Object.entries(siteInfo.nav)) { %>
+              <a href="<%- url %>"><%- name %></a>
+            <% } %>
           </div>
         </nav>
+        <% } %>
+
+        <% if(siteInfo.notice) { // 公告或副标题 %>
+        <aside class="center-container">
+          <div class="glass-card">
+            <%- siteInfo.notice %>
+          </div>
+        </aside>
+        <% } %>
     </header>
 
     <main class="center-container glass-card-large">
-      <% siteInfo.groups.forEach(({groupName, sites}) => { %>
+      <% siteInfo.groups.forEach(({name, sites}) => { // 分组 %>
 
-        <h2 class="glass-card group-title"> <%- groupName %> </h2>
+        <h2 class="glass-card group-title"> <%- name %> </h2>
         <div class="site-list">
-          <% sites.forEach(({name, url, description}) => { %>
+          <% sites.forEach(({name, url, description}) => { // 网站 %>
             <div class="site-card" onclick="window.open('<%= url %>')">
               <h3 class="margin-0"><a href="<%= url %>"> <%- name %>  </a></h3>
               <p><%- description || "暂时还没有描述哦" %> </p>
@@ -37,7 +47,7 @@
     </main>
 
     <footer class="center-container">
-      <p class="glass-card">Copyright 2023. All rights reserved.</p>
+      <p class="glass-card"><%- siteInfo.footer %></p>
     </footer>
 
   </body>

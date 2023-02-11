@@ -1,24 +1,31 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "properties": {
+        "footer": {
+            "description": "页脚",
+            "type": "string"
+        },
         "groups": {
-            "description": "The array contains many `group`s of website",
+            "description": "分组",
             "items": {
                 "properties": {
-                    "groupName": {
-                        "description": "The name of the group",
+                    "name": {
+                        "description": "组名",
                         "type": "string"
                     },
                     "sites": {
                         "items": {
                             "properties": {
                                 "description": {
+                                    "description": "描述",
                                     "type": "string"
                                 },
                                 "name": {
+                                    "description": "网站名称",
                                     "type": "string"
                                 },
                                 "url": {
+                                    "description": "网址",
                                     "type": "string"
                                 },
                                 "uuid": {
@@ -35,8 +42,22 @@
             },
             "type": "array"
         },
+        "nav": {
+            "additionalProperties": {
+                "type": "string"
+            },
+            "description": "导航项",
+            "type": "object"
+        },
+        "notice": {
+            "description": "公告",
+            "type": "string"
+        },
         "title": {
-            "description": "The title of the hub.",
+            "description": "网站标题. The title of the hub.",
+            "type": "string"
+        },
+        "version": {
             "type": "string"
         }
     },

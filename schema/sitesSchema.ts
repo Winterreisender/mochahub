@@ -1,23 +1,45 @@
 export interface Sites {
+    version: string,
+
     /**
-     * The title of the hub.
+     * 网站标题. The title of the hub.
      *
      */
     title :string,
 
     /**
-     * The array contains many `group`s of website
+     * 公告
+     */
+    notice :string,
+
+    /**
+     * 页脚
+     */
+    footer :string,
+
+    /**
+     * 导航项
+     * 
+     */
+    nav :{[name :string]: string}
+
+    /**
+     * 分组
      */
     groups :{
         /**
-         * The name of the group
+         * 组名
          */
-        groupName: string,
+        name: string,
+        /** 站点 */
         sites: {
             /** The UUID of a site, you can generate one in www.uuidgenerator.net online. We recommend UUID version 4 */
             uuid :string,
+            /** 网站名称 */
             name :string,
+            /** 网址 */
             url: string,
+            /** 描述 */
             description?: string
         }[]
     }[]

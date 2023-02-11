@@ -1,8 +1,17 @@
 {
+    "version": "0.1.0",
     "title": "MochaHub",
+    "notice": "<b>公告:</b>用于测试的网址来自<a href=\"https://yftdtddh.github.io/muxizyhz/\">木晞i的资源汇总</a>",
+    "footer": "Copyright 2023. All rights reserved.",
+    "nav": {
+        "添加": "schema/itemGenerator.html",
+        "编辑": "https://pmk65.github.io/jedemov2/dist/demo.html?schema=EQbwOgTmB2AE%2BzMAJAZwMYAsCmBbAhkgFyLCYAu5ADkQPS0BWqA9tALQY4EB0zEA5rQAmEfADNybAAwB2Wpzz4AxEgA0kGAlJUIzKtgjkAltlTFY4KHC0IkY5s3IHzlzTfdIhp9BCNVjrOZIgK4ZgFiBahrW7lpI5ACe%2BkHAqOS%2B0PxIkdGwAL7qVtlI%2FLoArlRmwCSuUdmkXhi%2B%2FkaBlaSAYEqAI34RBbXwSEZOuBVVWb02SDp6BsamLqNj0UjQ%2BLjYcz0LvZ7ejQHQSR2AsCrdbpu1sQlrrUgpaRnA82cIeY9PpKgDs63Vb4XAn0N1qdfn9JvpDCZhhZXiDzsB6j4%2FHsgTVYZttg0kc19tdgIB540AD%2FEnVFosYXRK425GdKZDak7IvOn0jzAZarFHM9HwnZYlokJCARX9AJteh0AD57EzkLclXfnJVLU%2B4wyW5fLA5V9YAlCAAGw56r%2BCN22KSAsAAuoS%2FWLYDxCmyqk0h5M9WMtXqpAlEpGIR6y3jbmYpp80gAFRwsAAquGAJIAEVgzDEsHwsA%2BTlUsDizBKsHQ%2BDg%2FGw0AM%2BCc8aLsGpsAA7jXuB6vQWi6JyHxuEXyGXtdTsNxYAB1bCwCDYdDMXCraBCCPRuMANwMH1YsAALBbfTFrZckvbFU7lTklaSXST6dKkswAEYMEfkWmukHHzln3H4CCiOJ3k%2BbA972qPp7PrKl7Xugt6OveNj%2Flsm62qQr7vp%2BDKql%2BSz4LOPpwvgQhCAM2L4NqAAKujgjMUI%2FABMEyu88oOoeWhQXChq8jisqAD%2FagBUQYAnhlrnCNpUUgwE3oh0QMRu0COEY6BUeR0FMYGLGkIANoqAFIqPF%2FHx240buEGibY1oDNq0l0XpcnIriwqAOAWgAZGb2oaDsY5CGfGibkGGmAlBe3BqVaGmUlpwnuLpGrzhAi4KTJvFbn5dwBZBjwMYBpCCaBn45MAQA%3D&value=EQbwOgTmB2AE%2BzMAbgUwgZwJYHtpIC5FgAGAOgEYySkAaSGBYgFy2YBtVDiBZHAYwAWAQwASAVwBGdBnARJoOVvy7AiSADySAfIBtFQFIqBDQHodgCldAcXKBpW0Cr0YBC3QIr%2BgAXVApuaArwI3DYgiKgBmALxgwcCCzMwADhgExsYAnn7MACbJSYJkAOZsglJkuMYAtuIAHlgAXnGCZcbBSNqAFOaAemZYdoAisYAJdoDiNoDcBibC2jJQcvBIfjhK6NxIAMI4EXEQWBlhsABMJKsAzGSwAILs7LCLy8wYR6gY6GhJZIOM8sDQwsjc4ENMTEiA37aABUpTwBghKgCsJjGxgQBxVDQdDCZg4CBkMIFdh3YYfJCAZ0ULP80R8HoA6PUAlUq44CyJgAX3o7weGQgOHEUUIAG1yfjYG97uyHk8Cqp1MBABTqgH6%2FQAVSoBuVzx3Ie2GYF24rJp0o%2BnPRyvxSHE4iwSX%2Bfk2wmEST8AA4AOwAWk2JBIloALEkAJwkC2SR2SVYWiiSPwUABsZpNdpN%2FFWuuA1K56o1j2EfP%2BuwAohDRYBqeyl0Zj4ggqLUxDCkWisQA7qWyMIMsC4hgyDDmDUI2zMxjgEkLvxFhFWHh%2FoAEBkAQAmACBVAKYRgCtXQCIDOLABSxgHTvQAbWYBQO0AMP8%2FQC%2B8YB8BMAZXqAa%2F0l4AqOUAXXKAfTlAPN%2BgA49QD%2B8mZAEAMSCbmap9%2BjqubWe14YFfv4jr8q0dAFY%2FQtYRNkAi07X%2FR0TQtE1VlQf8LVWf9%2BH4UCSCSM07T9E0M1fEZY3jPMkEAAC9AFtMtNcLwzUc3%2BAsohiYwkiwfgAGsyGKPxhGgLAyH4HACgbSM1VfJA20BTtu3wIjgAHQdAF%2F4idACg5QACeTadppznNdd0AK%2BVAFg5QBx%2BMALn9AEQdQAI%2FUALE1AHPTUdbzJJUHyfdkAF1HPgR97KYF91QUON%2BWIQBveMAeB1ABfo4xAFZXQAFbUAMzlKPZJBZXlPNFSjZ9XMzTV33%2BB0tkdfg%2FVQYCSENcDNkdCgYMkJI7QtPw%2FCdfgSHNYRUEkYRYubHzCIFQAVlUAS5UguC9r0uAbNcwFOii2MUtizIdgsEUNA5skXj%2BLvDz1XclL1S8vD8K1HV%2FhNSR%2FzNLZUGq1Akjy8C7UdYQLUdKqkhgpI%2FUqr9Vj9YQvyG6NOr8pABsAcNNAGS9X7vJGmjpImhjprIYtoRY8QTVrVB63mttijICJBAiNatuVTbhOVHbdoyg7pKK1rhAof8%2FAtfh%2FySSRwNQb6YJUS0TWw1YTX%2FUC%2FQoM0%2FHB5V%2Fv%2BfyosANvNRelaixvzcJ6JLMs5pOBbUHYcsIjxuyCelIm8NJqiRsy6S7v4N0SE2ArbrtT1gztcrhEkVCGZO1D%2BFepnJDtWXuXF6TAFGUwAUbxC%2F24shhWkBhlWZq2ABHZa62MNWwg13M0u5Q3X2NkTTYpgUzSdKCmfu1Z%2BDNfhwNDF1hEdNmGbyu0bdDJJhEriOY15AHgEAFWyw8Gxt1o6qPaKVya4YKHBJHmnBFprPiCnx4mDaEo2s4h%2FaP2ITjGrpyQXRUR1HXAvnNgek0KAv07HRb%2F0rqv%2F8u5bHv%2FkAfHdAF83QAYEJfz4x%2BhhPBiIJsD0jIHyYwRoCjzRXnhHOzY86j23nqCCwY%2FR1QtEkb0F87RmlAq6XKp9%2FxwW5maCgwgSD8AoKodeu18Jv2koAR9tAA4moAb%2BioqACx5P%2BDxRrj0iAxRYyQ8ArWXnrVe2daEIM3mLAuO9RKfXqm2K0JpNjVztLg%2BmHdzoWnQfwU0AZrR02fsPfWf0CK90TAAZQAFIAC08A0OkXLAB40gFxzIBcAAVmUBxvF%2BCwNfPAzMiDhrIOkqsO0poWr11dHaFCNdhCeiOn4aqNtUBmnrt9fUTpuH0N8v8fgS0IDCAgHEQAf2pRUAGGZuTiC8MAYWBihSsCSGKaUsg8JdZOMpJI4JXTI5hIFCQCCSF%2FxGi9JsP0DtuYIRNM6C%2BV8IKzP%2FB6CZFAamBwFBUypdhAAHpoABTTAB7aoAKb11kuMVg02IqAIi5HYPPVAU1OkjzXn0%2BAISzEDOIBsKhJ08EWhatbEq%2BVgKPVPn6ZZqxWokEFoGNZJjxEQwYQKQAiEaAEYnSKMU4V0L2lDVxFypplmIUkAQIiAnNgpE4lyTzyX2UpTACkwAgA&code=EQehAIBUAsFNwGYHsA2KkHcCWA7A5uCrrAM7gCGATvALbk4Am5ALkpQJ4WPjXkNI4U7AHTgAmkgCu4AMb0KDBrMklWNWUgbxyAIyQA3bdx2x0GYQB0cWBOAAUAKxKwGWVpXC5V9GbCS3sRkxhACkAZQB5ADkAUVd3AEpwJxc3NmEtVUokdjsEgG4rFPi2cABecBxYDHBA%2FnNw6Li0yjt%2BGUkaWBxmYQBHSVgOMNNYGXc7C2AAYicBAFpU93nkShophIAaZJcWcgLgIA%3D&style=ETI%3D&theme=bootstrap3&iconlib=bootstrap3&object_layout=normal&template=default&show_errors=interaction&required_by_default=1&no_additional_properties=0&display_required_only=0&remove_empty_properties=0&keep_oneof_values=1&ajax=0&ajaxCredentials=0&show_opt_in=0&disable_edit_json=0&disable_collapse=0&disable_properties=0&disable_array_add=0&disable_array_reorder=0&disable_array_delete=0&enable_array_copy=0&array_controls_top=0&disable_array_delete_all_rows=0&disable_array_delete_last_row=0&prompt_before_delete=1&lib_aceeditor=0&lib_autocomplete=0&lib_sceditor=0&lib_simplemde=0&lib_select2=0&lib_selectize=0&lib_choices=0&lib_flatpickr=0&lib_signaturepad=0&lib_mathjs=0&lib_cleavejs=0&lib_jodit=0&lib_jquery=0&lib_dompurify=1",
+        "关于": "",
+        "帮助": ""
+    },
     "groups":[
         {
-            "groupName": "在线动画",
+            "name": "在线动画",
             "sites": [
                 {
                     "uuid": "f3aadf87-3007-4d90-b9b2-1bf167848c2d",
@@ -19,7 +28,7 @@
             ]
         },
         {
-            "groupName": "轻小说/电子书",
+            "name": "轻小说/电子书",
             "sites": [
                 {
                     "uuid": "4d239c6e-a0aa-4391-8bd4-ffd9c087aeba",
