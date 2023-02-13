@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
-import sites from './sites.json'
+import sites from './src/sites.json'
 
 export default defineConfig({
+  assetsInclude: ['src/*.css'],
   optimizeDeps: {
     exclude: ['firebase-functions'],
   },
@@ -11,16 +12,12 @@ export default defineConfig({
       minify: true,
       inject: {
         data: {
-          siteInfo: sites
+          siteInfo: sites,
+          particles: {
+            enabled: true
+          }
         },
         tags: [
-          {
-            injectTo: 'body-prepend',
-            tag: 'div',
-            attrs: {
-              id: 'tag',
-            },
-          },
         ],
       },
     }),

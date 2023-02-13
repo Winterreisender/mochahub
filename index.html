@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title><%- siteInfo.title %></title>
   </head>
   <body>
@@ -49,6 +49,16 @@
     <footer class="center-container">
       <p class="glass-card"><%- siteInfo.footer %></p>
     </footer>
+
+    
+    <% if(particles.enabled){ // 粒子系统 %>
+    <div id="particle-container">      
+      <% for(i=0;i<30;i++) { %>
+        <div class="particle"></div>
+      <% } %>
+    </div>
+    <link href="./src/particle.scss" rel="stylesheet" />
+    <% } %>
 
   </body>
 </html>

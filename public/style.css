@@ -21,7 +21,7 @@
 
 body {
   background-color: var(--primary-color);
-  background-image: url("./background.webp");
+  background-image: url("background.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
