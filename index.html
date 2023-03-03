@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="style.css" />
     <title><%- siteInfo.title %></title>
   </head>
-  <body>
+
+  <body class="disable-select">
     <header>
+
         <h1 class="glass-card title"> <img src="logo.svg" class="inline-icon"/> <%- siteInfo.title %>  </h1>
+
 
         <% if(siteInfo.nav) { // 导航 %>
         <nav class="center-container">
@@ -21,6 +25,7 @@
         </nav>
         <% } %>
 
+
         <% if(siteInfo.notice) { // 公告或副标题 %>
         <aside class="center-container">
           <div class="glass-card">
@@ -28,7 +33,9 @@
           </div>
         </aside>
         <% } %>
+
     </header>
+
 
     <main class="center-container glass-card-large">
       <% siteInfo.groups.forEach(({name, sites}) => { // 分组 %>
@@ -46,11 +53,12 @@
       <% }) %>
     </main>
 
+
     <footer class="center-container">
       <p class="glass-card"><%- siteInfo.footer %></p>
     </footer>
-
     
+
     <% if(particles.enabled){ // 粒子系统 %>
     <div id="particle-container">      
       <% for(i=0;i<30;i++) { %>
@@ -61,4 +69,5 @@
     <% } %>
 
   </body>
+  
 </html>

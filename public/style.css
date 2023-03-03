@@ -137,3 +137,7 @@ aside {
   flex-flow: column nowrap;
   align-items: center;
 }
+
+.disable-select {
+  user-select: none;
+}

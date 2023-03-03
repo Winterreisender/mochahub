@@ -14,7 +14,7 @@ export default defineConfig({
         data: {
           siteInfo: sites,
           particles: {
-            enabled: true
+            enabled: true // 启用粒子系统
           }
         },
         tags: [
