@@ -13,22 +13,29 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
+    
     steps:
     - uses: actions/checkout@v3
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 18.x
         cache: 'npm'
+
     - run: npm ci
     - run: npm run build
 
-    - name: Upload GitHub Pages artifact
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+      
+    - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v1.0.7
       with:
-        path: dist/
+        path: ./dist/
+    
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
+
+
