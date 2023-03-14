@@ -7,6 +7,8 @@
 
 追求简洁、美观和小巧的导航页生成器。该项目还在实验阶段。
 
+[预览](https://winterreisender.github.io/MochaHub/)
+
 ## 使用方法
 
 1. 修改 `sites.json`，添加站点
