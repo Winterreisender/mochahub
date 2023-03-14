@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev-host": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "node schema/sitesSchemaLint.js",
-    "compileSchema": "typescript-json-schema ./schema/sitesSchema.ts Sites > ./schema/sitesSchema.json",
-    "prelint": "npm run compileSchema"
+    "lint": "node schema/mochahub-schema-lint.js",
+    "compile-schema": "typescript-json-schema ./schema/mochahub.schema.ts SiteInfo > ./schema/mochahub.schema.json",
+    "prelint": "npm run compile-schema"
   },
   "devDependencies": {
     "ajv": "^8.12.0",

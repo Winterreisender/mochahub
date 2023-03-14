@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
-import sites from './src/sites.json'
+import sites from './src/site-info.mochahub.json'
 
 export default defineConfig({
   assetsInclude: ['src/*.css'],

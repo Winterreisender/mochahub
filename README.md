@@ -11,7 +11,7 @@
 
 ## 使用方法
 
-1. 修改 `sites.json`，添加站点
+1. 修改 `src/sites.mochahub.json`，添加站点
 2. 下载本项目 `git clone https://github.com/Winterreisender/MochaHub`
 3. 安装Node.js, 打开项目文件夹, 运行 `npm install`
 4. 预览页面 `npm run dev`

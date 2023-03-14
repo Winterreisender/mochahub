@@ -18,8 +18,8 @@
         <% if(siteInfo.nav) { // 导航 %>
         <nav class="center-container">
           <div class="glass-card">
-            <% for(const [name, url] of Object.entries(siteInfo.nav)) { %>
-              <a href="<%- url %>"><%- name %></a>
+            <% for(const nav of siteInfo.nav) { %>
+              <a href="<%- nav.url %>"><%- nav.name %></a>
             <% } %>
           </div>
         </nav>

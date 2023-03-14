@@ -1,0 +1,76 @@
+{
+    "version": "0.1.1",
+    "title": "MochaHub",
+    "notice": "<b>公告:</b>用于测试的网址来自<a href=\"https://yftdtddh.github.io/muxizyhz/\">木晞i的资源汇总</a>",
+    "footer": "Copyright 2023. All rights reserved.",
+    "nav": [
+        {
+            "name": "添加",
+            "url": "itemGenerator.html"
+        },
+        {
+            "name": "帮助",
+            "url": "itemGenerator.html"
+        },
+        {
+            "name": "关于",
+            "url": "itemGenerator.html"
+        }
+    ],
+    "groups":[
+        {
+            "name": "在线动画",
+            "sites": [
+                {
+                    "name": "哔哩轻小说",
+                    "url": "https://www.linovelib.com"
+                },
+                {
+                    "name": "轻小说文库",
+                    "url": "https://www.wenku8.net/index.php"
+                },
+                {
+                    "name": "轻书架",
+                    "url": "https://www.lightnovel.app"
+                }
+            ]
+        },
+        {
+            "name": "轻小说/电子书",
+            "sites": [
+                {
+                    "name": "铅笔小说",
+                    "url": "https://www.23qb.net/lightnovel"
+                },
+                {
+                    "name": "魔笔小说",
+                    "url": "https://www.mobinovels.com"
+                },
+                {
+                    "name": "真白萌",
+                    "url": "https://masiro.me/admin"
+                },
+                {
+                    "name": "深夜读书会",
+                    "url": "http://ritdon.com"
+                },
+                {
+                    "name": "ESJZone",
+                    "url": "https://www.esjzone.cc"
+                },
+                {
+                    "name": "clibrary图书馆",
+                    "url": "https://clibrary.top"
+                },
+                {
+                    "name": "图书馆的无限回廊",
+                    "url": "https://epub.love/wp"
+                },
+                {
+                    "name": "我爱电子书",
+                    "url": "https://www.52doc.com"
+                }
+            ]
+        }
+    ]
+}

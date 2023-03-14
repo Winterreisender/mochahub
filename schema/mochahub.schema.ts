@@ -1,4 +1,4 @@
-export interface Sites {
+export interface SiteInfo {
     version: string,
 
     /**
@@ -21,7 +21,9 @@ export interface Sites {
      * 导航项
      * 
      */
-    nav :{[name :string]: string}
+    nav :{
+        name: string, url: string
+    }[]
 
     /**
      * 分组
