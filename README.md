@@ -11,8 +11,8 @@
 
 ## 使用方法
 
-1. 修改 `src/sites.mochahub.json`，添加站点
-2. 下载本项目 `git clone https://github.com/Winterreisender/MochaHub`
+1. 下载本项目 `git clone https://github.com/Winterreisender/MochaHub`
+2. 修改 `src/site-info.mochahub.json`，添加站点
 3. 安装Node.js, 打开项目文件夹, 运行 `npm install`
 4. 预览页面 `npm run dev`
 5. 构建页面 `npm run build`
@@ -27,6 +27,9 @@
 缺点:
 
 - 需要现代浏览器(Chromium 92+, Firefox 105+, Safari 16+)
+
+UI风格:
+一种玻璃板和卡片的混合拟物风格。卡片用于活动的内容。玻璃板上的元素表示固定的内容。(注意固定不等于不可交互)
 
 ## Credits
 

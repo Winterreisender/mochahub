@@ -40,7 +40,7 @@
     <main class="center-container glass-card-large">
       <% siteInfo.groups.forEach(({name, sites}) => { // 分组 %>
 
-        <h2 class="glass-card group-title"> <%- name %> </h2>
+        <h2 class="group-title"> <%- name %> </h2>
         <div class="site-list">
           <% sites.forEach(({name, url, description}) => { // 网站 %>
             <div class="site-card" onclick="window.open('<%= url %>')">
