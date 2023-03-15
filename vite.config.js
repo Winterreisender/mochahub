@@ -3,9 +3,9 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import sites from './src/site-info.mochahub.json'
 
 export default defineConfig({
-  assetsInclude: ['src/*.css'],
+  base: '/mochahub',
   optimizeDeps: {
-    exclude: ['firebase-functions'],
+    exclude: ['firebase-functions','schema','private'],
   },
   plugins: [
     createHtmlPlugin({
