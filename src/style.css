@@ -27,9 +27,9 @@ body {
   background-color: var(--primary-color);
   background-image: url("../media/img/background.webp");
   /*background-image: url("https://api.ghser.com/random/bg.php");*/
-  background-size: cover;
-  background-position: center;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom left;
   position: relative;
   color: var(--font-color);
   font-family: "LXGW Marker Gothic","Microsoft YaHei UI", sans-serif;
@@ -38,12 +38,15 @@ body {
 a {
   color: var(--font-color);
   text-decoration: none;
-  font-weight: bold;
-  transition: all 0.1s ease-in;
+  padding: .2em .2em .1em .1em; /* 这个padding是为了暂时修正盒模型不平均的问题，应该有其他更好的方法修正 */
+
+  transition: all .2s ease-in;
+  background: linear-gradient(to bottom,transparent 45%, var(--primary-color) 0) no-repeat;
+  background-size: 100% 200%;
 }
 
 a:hover {
-  background-color: var(--primary-color);
+  background-position: 0 100%;  
   color: var(--background-color);
 }
 

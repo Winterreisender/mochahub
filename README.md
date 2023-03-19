@@ -4,7 +4,7 @@
 </h1>
 
 ![status](https://img.shields.io/badge/status-experimental-blue)
-[预览](https://winterreisender.github.io/MochaHub/)
+[预览](https://winterreisender.github.io/mochahub/)
 
 追求简洁、美观和小巧的导航页生成器。该项目还在实验阶段。
 
