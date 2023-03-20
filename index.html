@@ -2,9 +2,9 @@
 <html lang="zh">
 
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./media/img/logo.svg" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./media/img/logo.svg" />
     <title><%- siteInfo.title %></title>
     <link rel="stylesheet" href="./src/style.css" />
   </head>
@@ -12,32 +12,28 @@
   <body class="disable-select">
     <header>
 
-        <h1 class="glass-card title"> <img src="./media/img/logo.svg" class="inline-icon"/> <%- siteInfo.title %>  </h1>
+        <h1 class="glass-plate title"> <img src="./media/img/logo.svg" class="inline-icon" alt="logo" /> <%- siteInfo.title %>  </h1>
 
 
         <% if(siteInfo.nav) { // 导航 %>
-        <nav class="center-container">
-          <div class="glass-card">
-            <% for(const nav of siteInfo.nav) { %>
-              <a href="<%- nav.url %>"><%- nav.name %></a>
-            <% } %>
-          </div>
+        <nav class="glass-plate">
+          <% for(const nav of siteInfo.nav) { %>
+            <a href="<%- nav.url %>"><%- nav.name %></a>
+          <% } %>
         </nav>
         <% } %>
 
 
         <% if(siteInfo.notice) { // 公告或副标题 %>
-        <aside class="center-container">
-          <div class="glass-card">
-            <%- siteInfo.notice %>
-          </div>
+        <aside class="glass-plate">
+          <%- siteInfo.notice %>
         </aside>
         <% } %>
 
     </header>
 
 
-    <main class="center-container glass-card-large">
+    <main class="center-container glass-plate">
       <% siteInfo.groups.forEach(({name, sites}) => { // 分组 %>
 
         <h2 class="group-title"> <%- name %> </h2>
@@ -54,13 +50,13 @@
     </main>
 
 
-    <footer class="center-container">
-      <p class="glass-card"><%- siteInfo.footer %></p>
+    <footer class="glass-plate center-container">
+      <p><%- siteInfo.footer %></p>
     </footer>
     
 
     <% if(particles.enabled){ // 粒子系统 %>
-    <div id="particle-container">      
+    <div id="particle-container">
       <% for(i=0;i<30;i++) { %>
         <div class="particle"></div>
       <% } %>

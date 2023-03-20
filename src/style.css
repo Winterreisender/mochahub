@@ -1,9 +1,11 @@
+/* --------Global--------- */
+
 :root {
   --primary-color: #57C3C2;
   --secondary-color: #99CCCB;
   --font-color: black;
   --background-color: white;
-  --glass-card-bg-color: #ffffffbf
+  --glass-plate-bg-color: #ffffffbf
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,7 +14,7 @@
     --secondary-color: #99CCCB;
     --font-color: white;
     --background-color: #202124;
-    --glass-card-bg-color: #0000004f
+    --glass-plate-bg-color: #0000004f
   }
 }
 
@@ -70,16 +72,13 @@ main {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-}
-
-main > :nth-child(1) {
-  margin-top: 0;
+  margin: 1vh 1vw;
+  padding: 1.8em;
 }
 
 footer {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  width: fit-content;
+  margin: auto;
 }
 
 .site-list {
@@ -88,6 +87,37 @@ footer {
   grid-template-columns: repeat(auto-fill, 22em);
   justify-items: center;
   justify-content: center;
+}
+
+/* --------Atom CSS--------- */
+
+.margin-0 {
+  margin: 0;
+}
+
+.inline-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.1em;
+}
+
+.center-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.disable-select {
+  user-select: none;
+}
+
+.glass-plate {
+  border-radius: 16px;
+  padding: .6em;
+  backdrop-filter: blur(10px) saturate(150%);
+  background-color: var(--glass-plate-bg-color);
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .site-card {
@@ -107,47 +137,4 @@ footer {
   transform: rotate(1deg);
   box-shadow: 5px 5px 5px gray;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),0 4px 6px -2px rgba(0, 0, 0, 0.15);
-}
-
-/* --------Atom CSS--------- */
-
-.margin-0 {
-  margin: 0;
-}
-
-.glass-card {
-  border-radius: 16px;
-  padding: .6em;
-  backdrop-filter: blur(10px) saturate(150%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: var(--glass-card-bg-color);
-  border: 1px solid rgba(209, 213, 219, 0.3);
-}
-
-.glass-card-large {
-  border-radius: 16px;
-  margin: 1vh 1vw;
-  padding: 1.8em;
-  backdrop-filter: blur(10px) saturate(150%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: var(--glass-card-bg-color);
-  border: 1px solid rgba(209, 213, 219, 0.3);
-}
-
-
-.inline-icon {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  vertical-align: -0.1em;
-}
-
-.center-container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.disable-select {
-  user-select: none;
 }
