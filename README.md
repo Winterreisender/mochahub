@@ -22,20 +22,20 @@
 
 目前各个选项散落在项目各处，暂未整合。
 
-| 配置       | 位置                                  | 备注                                                                     |
-| ---------- | ------------------------------------- | ------------------------------------------------------------------------ |
-| `base`目录 | `vite.config.js`                      | [Vite 相关文档](https://cn.vitejs.dev/guide/build.html#public-base-path) |
-| 背景图片   | `media/img/background.webp`           |                                                                          |
-| 图标       | `media/img/logo.svg`                  |                                                                          |
-| 字体       | `media/font/`                         |                                                                          |
-| 主题色     | `src/style.css`                       |                                                                          |
-| 粒子效果   | `vite.config.js`和`src/particle.scss` |                                                                          |
+| 配置         | 位置                                       | 备注                                                                  |
+| ------------ | ------------------------------------------ | --------------------------------------------------------------------- |
+| `base`目录 | `vite.config.js`                         | [Vite 相关文档](https://cn.vitejs.dev/guide/build.html#public-base-path) |
+| 背景图片     | `media/img/background.webp`              |                                                                       |
+| 图标         | `media/img/logo.svg`                     |                                                                       |
+| 字体         | `media/font/`                            |                                                                       |
+| 主题色       | `src/style.css`                          |                                                                       |
+| 粒子效果     | `vite.config.js`和 `src/particle.scss` |                                                                       |
 
 ## 特点
 
 优点:
 
-- 小巧: 不使用第三方框架，在经过 EJS 模板编译后几乎仅有 HTML 和 CSS，在没有 JS 的情况下也能正常运行
+- 小巧: 不使用第三方框架，在经过 EJS 模板编译后仅有 HTML 和 CSS，在没有 JS 的情况下也能正常运行
 - 美观: 在做到上一条的前提下，尽可能追求美观
 
 缺点:
@@ -52,8 +52,8 @@ UI 风格:
 
 MochaHub 的诞生离不开开放源代码软件项目。
 
-| 软件                                                                         | 许可                                                                                   |
-| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| 软件                                                                      | 许可                                                                                |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | [vite](https://vitejs.dev/)                                                  | [MIT](https://github.com/vitejs/vite/blob/main/LICENSE)                                |
 | [vite-plugin-html](https://github.com/vbenjs/vite-plugin-html)               | [MIT](https://github.com/vbenjs/vite-plugin-html/blob/main/LICENSE)                    |
 | [ajv](https://github.com/ajv-validator/ajv)                                  | [MIT](https://github.com/ajv-validator/ajv/blob/master/LICENSE)                        |

@@ -37,13 +37,21 @@
       <% siteInfo.groups.forEach(({name, sites}) => { // 分组 %>
 
         <h2 class="group-title"> <%- name %> </h2>
+
         <div class="site-list">
+
           <% sites.forEach(({name, url, description}) => { // 网站 %>
-            <div class="site-card" onclick="window.open('<%= url %>')">
-              <h3 class="margin-0"><a href="<%= url %>"> <%- name %>  </a></h3>
-              <p><%- description || "暂时还没有描述哦" %> </p>
-            </div>
+            
+            <!-- 在<a>中放块元素完全符合HTML5标准 -->
+            <a href="<%= url %>" class="no-style">
+              <div class="site-card">
+                <h3><span class="link"><%- name %></span></h3>
+                <p><%- description || "暂时还没有描述哦" %> </p>
+              </div>
+            </a>
+            
           <% }) %>
+
         </div>
 
       <% }) %>
@@ -51,6 +59,7 @@
 
 
     <footer class="glass-plate center-container">
+      <noscript><p>This site works with NoScript!</p></noscript>
       <p><%- siteInfo.footer %></p>
     </footer>
     
@@ -64,6 +73,7 @@
     <link href="././src/particle.scss" rel="stylesheet" />
     <% } %>
 
+    
   </body>
   
 </html>

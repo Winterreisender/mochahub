@@ -32,21 +32,24 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
-  position: relative;
-  color: var(--font-color);
   font-family: "LXGW Marker Gothic","Microsoft YaHei UI", sans-serif;
+  color: var(--font-color);
+  position: relative;
 }
 
+.link,
 a {
   color: var(--font-color);
   text-decoration: none;
-  padding: .2em .2em .1em .1em; /* 这个padding是为了暂时修正盒模型不平均的问题，应该有其他更好的方法修正 */
-
+  padding: .2em; /* 这个padding是为了暂时修正盒模型不平均的问题，应该有其他更好的方法修正 */
+  
   transition: all .2s ease-in;
   background: linear-gradient(to bottom,transparent 45%, var(--primary-color) 0) no-repeat;
   background-size: 100% 200%;
+  background-position: 0 0;  
 }
 
+.link:hover,
 a:hover {
   background-position: 0 100%;  
   color: var(--background-color);
@@ -54,18 +57,16 @@ a:hover {
 
 
 header {
-  border-radius: 0 0 9px 9px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: end;
   padding: .2em 1em;
 }
 
 header > * {
-  margin-right: 1vw;
-  margin-top: 1vh;
   margin-bottom: 1vh;
+  margin-right: 1vw;
 }
 
 main {
@@ -88,6 +89,16 @@ footer {
   justify-items: center;
   justify-content: center;
 }
+
+p {
+  margin: .5em 0;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 
 /* --------Atom CSS--------- */
 
@@ -137,4 +148,16 @@ footer {
   transform: rotate(1deg);
   box-shadow: 5px 5px 5px gray;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),0 4px 6px -2px rgba(0, 0, 0, 0.15);
+}
+
+.site-card :nth-child(1) {
+  margin-top: 0;
+}
+
+.no-style {
+  all: unset;
+}
+
+.no-style:hover {
+  all: unset;
 }
