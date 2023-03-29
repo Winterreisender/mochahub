@@ -1,5 +1,5 @@
 <h1>
-<img src="media/img/logo.svg" style="width: 1.5em; height: 1.5em" />
+<img src="asset/img/logo.svg" style="width: 1.5em; height: 1.5em" />
 <span>MochaHub</span>
 </h1>
 
