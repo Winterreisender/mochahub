@@ -1,24 +1,17 @@
 {
   "name": "mochahub",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "dev-host": "vite --host",
     "build": "vite build",
-    "preview": "vite preview",
-    "lint": "node schema/mochahub-schema-lint.js",
-    "compile-schema": "typescript-json-schema ./schema/mochahub.schema.ts SiteInfo > ./schema/mochahub.schema.json",
-    "prelint": "npm run compile-schema"
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "ajv": "^8.12.0",
-    "typescript-json-schema": "^0.55.0",
+    "sass": "^1.58.0",
     "vite": "^4.0.0",
-    "vite-plugin-html": "^3.2.0",
-    "sass": "^1.58.0"
-  },
-  "dependencies": {
+    "vite-plugin-html": "^3.2.0"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "name": "mochahub-schema",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "node mochahub-schema-lint.js",
+    "compile-schema": "typescript-json-schema ./mochahub.schema.ts SiteInfo > ./mochahub.schema.json",
+    "prelint": "npm run compile-schema"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "typescript-json-schema": "^0.55.0"
+  }
+}

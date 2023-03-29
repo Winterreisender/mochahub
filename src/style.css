@@ -19,20 +19,19 @@
 }
 
 @font-face {
-  font-family: "LXGW Marker Gothic";
-  src: url("../media/font/LXGWMarkerGothic.woff2");
+  font-family: "Default";
+  src: url("../asset/font/Default.woff2");
 }
 
 /* --------Element CSS--------- */
 
 body {
   background-color: var(--primary-color);
-  background-image: url("../media/img/background.webp");
-  /*background-image: url("https://api.ghser.com/random/bg.php");*/
+  background-image: url("../asset/img/background.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
-  font-family: "LXGW Marker Gothic","Microsoft YaHei UI", sans-serif;
+  font-family: "Default","Microsoft YaHei UI", sans-serif;
   color: var(--font-color);
   position: relative;
 }
@@ -56,7 +55,8 @@ a:hover {
 }
 
 
-header {
+header,
+footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -64,7 +64,13 @@ header {
   padding: .2em 1em;
 }
 
-header > * {
+footer {
+  justify-content: center;
+  align-items: start;
+}
+
+header > *,
+footer > * {
   margin-bottom: 1vh;
   margin-right: 1vw;
 }
@@ -75,11 +81,6 @@ main {
   align-items: center;
   margin: 1vh 1vw;
   padding: 1.8em;
-}
-
-footer {
-  width: fit-content;
-  margin: auto;
 }
 
 .site-list {
@@ -106,6 +107,10 @@ p {
   margin: 0;
 }
 
+.padding-0 {
+  padding: 0;
+}
+
 .inline-icon {
   width: 1em;
   height: 1em;
@@ -113,14 +118,14 @@ p {
   vertical-align: -0.1em;
 }
 
+.disable-select {
+  user-select: none;
+}
+
 .center-container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-}
-
-.disable-select {
-  user-select: none;
 }
 
 .glass-plate {
@@ -141,7 +146,7 @@ p {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: all 0.1s ease-in;
   cursor: pointer;
-  font-family: "LXGW Marker Gothic";
+  font-family: "Default";
 }
 
 .site-card:hover {
@@ -154,10 +159,7 @@ p {
   margin-top: 0;
 }
 
-.no-style {
-  all: unset;
-}
-
+.no-style,
 .no-style:hover {
   all: unset;
 }

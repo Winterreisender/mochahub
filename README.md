@@ -22,14 +22,14 @@
 
 目前各个选项散落在项目各处，暂未整合。
 
-| 配置         | 位置                                       | 备注                                                                  |
-| ------------ | ------------------------------------------ | --------------------------------------------------------------------- |
-| `base`目录 | `vite.config.js`                         | [Vite 相关文档](https://cn.vitejs.dev/guide/build.html#public-base-path) |
-| 背景图片     | `media/img/background.webp`              |                                                                       |
-| 图标         | `media/img/logo.svg`                     |                                                                       |
-| 字体         | `media/font/`                            |                                                                       |
-| 主题色       | `src/style.css`                          |                                                                       |
-| 粒子效果     | `vite.config.js`和 `src/particle.scss` |                                                                       |
+| 配置         | 位置                          | 备注                                                                  |
+| ------------ | ----------------------------- | --------------------------------------------------------------------- |
+| `base`目录 | `vite.config.js`            | [Vite 相关文档](https://cn.vitejs.dev/guide/build.html#public-base-path) |
+| 背景图片     | `media/img/background.webp` |                                                                       |
+| 图标         | `media/img/logo.svg`        |                                                                       |
+| 字体         | `media/font/`               |                                                                       |
+| 主题色       | `src/style.css`             |                                                                       |
+| 粒子效果     | `src/particle.scss`         | 控制粒子数量                                                          |
 
 ## 特点
 

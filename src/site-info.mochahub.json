@@ -1,8 +1,20 @@
 {
-    "version": "0.1.1",
+    "version": "0.1.2",
     "title": "MochaHub",
-    "notice": "<b>公告:</b>用于测试的网址来自<a href=\"https://yftdtddh.github.io/muxizyhz/\">木晞i的资源汇总</a>",
-    "footer": "Copyright 2023-present MochaHub. All rights reserved.",
+    "notices": [
+        {
+            "type": "normal",
+            "content": "<div class='glass-plate'><b>公告:</b>用于测试的网址来自<a href=\"https://yftdtddh.github.io/muxizyhz/\">木晞i的资源汇总</a></div>"
+        },
+        {
+            "content": "<div class='' style='padding: 0;'><iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width=298 height=52 src='//music.163.com/outchain/player?type=2&id=1979697576&auto=1&height=32'></iframe></div>"
+        }
+    ],
+    "footers": [
+        {
+            "content": "<noscript><p>This site works with NoScript!</p></noscript><p>Copyright 2023-present MochaHub. <br/> All rights reserved.</p>"
+        }
+    ],
     "nav": [
         {
             "name": "添加",
@@ -72,5 +84,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "particles": {
+        "enabled": true
+    }
 }

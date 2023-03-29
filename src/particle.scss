@@ -1,5 +1,7 @@
 /* 粒子CSS */
 
+$numbers: 15;
+
 #particle-container {
   display: block;
   position: fixed;
@@ -8,30 +10,34 @@
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-}
 
-.particle {
-  position: relative;
-  border-radius: 50%;
-}
-
-@for $i from 1 through 30 {
-@keyframes particle-animation-#{$i} {
-  100% {
-    transform: translate((random(90) * 1vw), (random(90) * 1vh));
+  .particle {
+    position: relative;
+    border-radius: 50%;
   }
+
+  @for $i from 1 through $numbers {
+    .particle:nth-child(#{$i}){
+      animation: particle-animation-#{$i} 30s ease infinite;
+      animation-delay: -$i * .2s;
+    
+      $size: calc(random(10)/10 + .5) * 1vh;
+      height: $size;
+      width: $size;
+      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+    
+      background: hsl(random(360), 70%, 50%);
+      opacity: calc(random(50)/100);
+    }
+
+    @keyframes particle-animation-#{$i} {
+      100% {
+        transform: translate((random(90) * 1vw), (random(90) * 1vh));
+      }
+    }
+  }
+
 }
 
-.particle:nth-child(#{$i}){
-  animation: particle-animation-#{$i} 30s ease infinite;
-  animation-delay: -$i * .2s;
 
-  $size: calc(random(10)/10 + .5) * 1vh;
-  height: $size;
-  width: $size;
-  transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
 
-  background: hsl(random(360), 70%, 50%);
-  opacity: calc(random(50)/100);
-}
-}

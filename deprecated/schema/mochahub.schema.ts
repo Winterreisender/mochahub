@@ -36,7 +36,7 @@ export interface SiteInfo {
         /** 站点 */
         sites: {
             /** The UUID of a site, you can generate one in www.uuidgenerator.net online. We recommend UUID version 4 */
-            uuid :string,
+            uuid? :string,
             /** 网站名称 */
             name :string,
             /** 网址 */
@@ -45,4 +45,8 @@ export interface SiteInfo {
             description?: string
         }[]
     }[]
+
+    particles: {
+        enabled: boolean
+    }
 }
