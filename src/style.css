@@ -31,7 +31,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
-  font-family: "Default","Microsoft YaHei UI", sans-serif;
+  font-family: "Default", sans-serif;
   color: var(--font-color);
   position: relative;
 }
@@ -40,7 +40,7 @@ body {
 a {
   color: var(--font-color);
   text-decoration: none;
-  padding: .2em; /* 这个padding是为了暂时修正盒模型不平均的问题，应该有其他更好的方法修正 */
+  padding: .2em;
   
   transition: all .2s ease-in;
   background: linear-gradient(to bottom,transparent 45%, var(--primary-color) 0) no-repeat;
@@ -129,9 +129,9 @@ p {
 }
 
 .glass-plate {
-  border-radius: 16px;
+  border-radius: .3em;
   padding: .6em;
-  backdrop-filter: blur(10px) saturate(150%);
+  backdrop-filter: blur(8px) saturate(150%);
   background-color: var(--glass-plate-bg-color);
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
