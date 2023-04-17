@@ -23,92 +23,19 @@
   src: url("../asset/font/Default.woff2");
 }
 
-/* --------Element CSS--------- */
+/* --------Atomic CSS--------- */
 
-body {
-  background-color: var(--primary-color);
-  background-image: url("../asset/img/background.webp");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom left;
-  font-family: "Default", sans-serif;
-  color: var(--font-color);
-  position: relative;
+.no-style,
+.no-style:hover {
+  all: unset !important;
 }
-
-.link,
-a {
-  color: var(--font-color);
-  text-decoration: none;
-  padding: .2em;
-  
-  transition: all .2s ease-in;
-  background: linear-gradient(to bottom,transparent 45%, var(--primary-color) 0) no-repeat;
-  background-size: 100% 200%;
-  background-position: 0 0;  
-}
-
-.link:hover,
-a:hover {
-  background-position: 0 100%;  
-  color: var(--background-color);
-}
-
-
-header,
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: end;
-  padding: .2em 1em;
-}
-
-footer {
-  justify-content: center;
-  align-items: start;
-}
-
-header > *,
-footer > * {
-  margin-bottom: 1vh;
-  margin-right: 1vw;
-}
-
-main {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin: 1vh 1vw;
-  padding: 1.8em;
-}
-
-.site-list {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 22em);
-  justify-items: center;
-  justify-content: center;
-}
-
-p {
-  margin: .5em 0;
-}
-
-.title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-
-/* --------Atom CSS--------- */
 
 .margin-0 {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .padding-0 {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .inline-icon {
@@ -118,7 +45,7 @@ p {
   vertical-align: -0.1em;
 }
 
-.disable-select {
+.user-select-none {
   user-select: none;
 }
 
@@ -131,6 +58,7 @@ p {
 .glass-plate {
   border-radius: .3em;
   padding: .6em;
+  margin: 1vh 1vw;
   backdrop-filter: blur(8px) saturate(150%);
   background-color: var(--glass-plate-bg-color);
   border: 1px solid rgba(209, 213, 219, 0.3);
@@ -159,7 +87,101 @@ p {
   margin-top: 0;
 }
 
-.no-style,
-.no-style:hover {
-  all: unset;
+
+/* --------Element CSS--------- */
+
+body {
+  background-color: var(--primary-color);
+  background-image: url("../asset/img/background.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom left;
+  font-family: "Default", sans-serif;
+  color: var(--font-color);
+  position: relative;
+}
+
+.link,
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  padding: .1em;
+  
+  transition: all .2s ease-in;
+  background: linear-gradient(to bottom,transparent 45%, var(--primary-color) 0) no-repeat;
+  background-size: 100% 200%;
+  background-position: 0 0;  
+}
+
+.link:hover,
+a:hover {
+  background-position: 0 100%;  
+  color: var(--background-color);
+}
+
+
+header,
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: end;
+  padding: .2em 1em;
+}
+
+footer {
+  justify-content: center;
+  align-items: start;
+}
+
+footer p {
+  margin: .5em 0;
+}
+
+header > :nth-child(1) {
+  margin-left: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 1vh 1vw;
+  padding: 1.8em;
+}
+
+main > .site-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 22em);
+  justify-items: center;
+  justify-content: center;
+}
+
+form > input {
+  font-family: 'Default';
+  color: var(--font-color);
+  background: none;
+  border: none;
+  font-size: 1em;
+  padding: 0;
+
+  transition: all .2s ease-in;
+  background: linear-gradient(to bottom,transparent 45%, var(--primary-color) 0) no-repeat;
+  background-size: 100% 200%;
+  background-position: 0 0;  
+}
+
+form > input:focus-visible {
+  outline: none;
+  background-position: 0 100%;  
+  color: var(--background-color);
+}
+
+form > input::placeholder {
+  color: var(--font-color);
+}
+
+form > input:focus-visible::placeholder {
+  color: var(--background-color);
 }

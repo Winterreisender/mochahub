@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
 
-  <body class="disable-select">
+  <body class="user-select-none">
     <header>
 
-        <h1 class="glass-plate title"> <img src="./asset/img/logo.svg" class="inline-icon" alt="logo" /> <%- config.title %>  </h1>
+        <h1 class="glass-plate"> <img src="./asset/img/logo.svg" class="inline-icon" alt="logo" /> <%- config.title %>  </h1>
 
         <% if(config.nav) { // 导航 %>
         <nav class="glass-plate">
@@ -22,6 +22,11 @@
         </nav>
         <% } %>
 
+        <% if(config.search) { // 搜索 %>
+          <form id="search" class="glass-plate" action="<%= config.search.action %>" method="get">
+            <input type="text" name="<%= config.search.query %>" placeholder="<%= config.search.placeholder %>"/>
+          </form>
+        <% } %>
 
         <% // 公告或副标题 %>
         <% config.notices.forEach(({content}) => {%>
