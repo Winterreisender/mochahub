@@ -52,35 +52,46 @@
             "name": "轻小说/电子书",
             "sites": [
                 {
-                    "name": "铅笔小说",
-                    "url": "https://www.23qb.net/lightnovel"
+                    "name": "铅笔小说1",
+                    "url": "https://www.23qb.net/lightnovel",
+                    "description": "这是一张大卡片，如果写了description，它就是大卡片"
                 },
                 {
-                    "name": "魔笔小说",
+                    "name": "魔笔小说2",
                     "url": "https://www.mobinovels.com"
                 },
                 {
-                    "name": "真白萌",
+                    "name": "真白萌3",
                     "url": "https://masiro.me/admin"
                 },
                 {
-                    "name": "深夜读书会",
+                    "name": "深夜读书会4",
                     "url": "http://ritdon.com"
                 },
                 {
-                    "name": "ESJZone",
-                    "url": "https://www.esjzone.cc"
+                    "name": "ESJZone5",
+                    "url": "https://www.esjzone.cc",
+                    "description": "这是一张大卡片，如果写了description，它就是大卡片"
+                    
                 },
                 {
-                    "name": "clibrary图书馆",
+                    "name": "clibrary图书馆6",
                     "url": "https://clibrary.top"
                 },
                 {
-                    "name": "图书馆的无限回廊",
+                    "name": "clibrary图书馆7",
+                    "url": "https://clibrary.top"
+                },
+                {
+                    "name": "图书馆的无限回廊8",
                     "url": "https://epub.love/wp"
                 },
                 {
-                    "name": "我爱电子书",
+                    "name": "我爱电子书9",
+                    "url": "https://www.52doc.com"
+                },
+                {
+                    "name": "我爱电子书10",
                     "url": "https://www.52doc.com"
                 }
             ]

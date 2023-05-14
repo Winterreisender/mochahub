@@ -17,7 +17,7 @@
         <% if(config.nav) { // 导航 %>
         <nav class="glass-plate">
           <% for(const nav of config.nav) { %>
-            <a href="<%- nav.url %>"><%- nav.name %></a>
+            <a href="<%- nav.url %>" class="link"><%- nav.name %></a>
           <% } %>
         </nav>
         <% } %>
@@ -42,16 +42,26 @@
         <h2 class="group-title"> <%- name %> </h2>
 
         <div class="site-list">
-
           <% sites.forEach(({name, url, description}) => { // 网站 %>
-            
-            <a href="<%= url %>" class="no-style"><div class="site-card">
-              <h3><span class="link"><%- name %></span></h3>
-              <p><%- description || "暂时还没有描述哦" %> </p>
-            </div></a>
-            
-          <% }) %>
+            <% const cardType = description ? 'large' : 'small' %>
 
+            <a href="<%= url %>" class="no-style site-card-<%= cardType %>-a">
+
+              <% if(cardType=='large') {%>
+                <div class="site-card-large">
+                  <h3><span class="link"><%- name %></span></h3>
+                  <p><%- description %> </p>
+                </div>
+              <% } %>
+
+              <% if(cardType=='small') {%>
+                <div class="site-card-small center-container">
+                  <h3><span class="link"><%- name %></span></h3>
+                </div>
+              <% } %>
+
+            </a>
+          <% }) %>
         </div>
 
       <% }) %>
